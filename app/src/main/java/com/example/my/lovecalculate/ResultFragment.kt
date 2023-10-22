@@ -21,14 +21,17 @@ class ResultFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        getData()
-    }
-
-    private fun getData() {
-        val wishes = arguments?.getString("wishes")
-        val percent = arguments?.getString("percentage")
-        binding.result.text = wishes
-        binding.percentage.text = percent + "%"
+        val result = arguments?.getSerializable("key")
+        binding.result.text = result.toString()
     }
 
 }
+
+data class JokeModel(
+    val body: List<SetupModel>
+)
+
+data class SetupModel(
+    val setup: String,
+    val punchline: String,
+)

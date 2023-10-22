@@ -3,13 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="#E6D3D3"
     android:gravity="center"
     android:layout_height="match_parent"
     tools:context=".ResultFragment">
 
     <TextView
         android:id="@+id/percentage"
-        android:text="%"
+        android:text="RESULTS"
+        android:background="#00BCD4"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         android:textSize="32sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
