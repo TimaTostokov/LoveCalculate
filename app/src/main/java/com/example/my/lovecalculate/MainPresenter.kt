@@ -20,6 +20,7 @@ class MainPresenter {
                 if (response.isSuccessful) {
                     val model = response.body()
                     model?.let {
+                        App.appDatabase.getLoveDao().insert(it)
                         view.changeScreen(it)
                     }
                 }

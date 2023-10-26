@@ -20,6 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="70dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="40dp"
         android:text="Love_calculator"
         android:textColor="#3F51B5"
@@ -31,8 +32,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="100dp"
-        android:text="First_name"
+        android:layout_marginEnd="90dp"
+        android:text="First Name"
         android:textColor="@color/black"
         android:textSize="24sp" />
 
@@ -51,8 +52,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="100dp"
-        android:text="Second_name"
+        android:layout_marginEnd="90dp"
+        android:text="Second Name"
         android:textColor="@color/black"
         android:textSize="24sp" />
 

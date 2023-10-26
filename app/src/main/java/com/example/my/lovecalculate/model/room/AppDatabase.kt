@@ -1,0 +1,11 @@
+package com.example.my.lovecalculate.model.room
+
+import androidx.room.Database
+import androidx.room.RoomDatabase
+import com.example.my.lovecalculate.model.LoveModel
+
+@Database(version = 1, entities = [LoveModel::class])
+abstract class AppDatabase : RoomDatabase(){
+
+    abstract fun getLoveDao(): LoveDao
+}

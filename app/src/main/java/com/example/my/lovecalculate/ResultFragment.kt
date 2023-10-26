@@ -1,5 +1,6 @@
 package com.example.my.lovecalculate
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -22,16 +23,11 @@ class ResultFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val result = arguments?.getSerializable("key")
-        binding.result.text = result.toString()
+        binding.tvResult.text = result.toString()
+
+        binding.btnTryAgain.setOnClickListener {
+            startActivity(Intent(binding.root.context, HistoryActivity::class.java))
+        }
     }
 
 }
-
-data class JokeModel(
-    val body: List<SetupModel>
-)
-
-data class SetupModel(
-    val setup: String,
-    val punchline: String,
-)
