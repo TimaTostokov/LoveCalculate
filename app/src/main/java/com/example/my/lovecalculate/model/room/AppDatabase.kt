@@ -8,4 +8,5 @@ import com.example.my.lovecalculate.model.LoveModel
 abstract class AppDatabase : RoomDatabase(){
 
     abstract fun getLoveDao(): LoveDao
+
 }

@@ -14,7 +14,8 @@ data class LoveModel(
     val percentage: String,
     val result: String,
     @PrimaryKey(autoGenerate = true)
-    var id: Int
+    var id: Int,
+    var insertTime:Long
 ) : Serializable
 
 //{

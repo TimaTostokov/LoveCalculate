@@ -1,11 +1,11 @@
-package com.example.my.lovecalculate
+package com.example.my.lovecalculate.ui.result
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.my.lovecalculate.databinding.FragmentResultBinding
 
 class ResultFragment : Fragment() {
@@ -26,7 +26,7 @@ class ResultFragment : Fragment() {
         binding.tvResult.text = result.toString()
 
         binding.btnTryAgain.setOnClickListener {
-            startActivity(Intent(binding.root.context, HistoryActivity::class.java))
+            findNavController().navigateUp()
         }
     }
 
