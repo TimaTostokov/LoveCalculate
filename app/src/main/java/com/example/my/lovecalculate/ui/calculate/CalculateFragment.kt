@@ -8,9 +8,9 @@ import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.my.lovecalculate.di.Hero
 import com.example.my.lovecalculate.R
 import com.example.my.lovecalculate.databinding.FragmentCalculateBinding
+import com.example.my.lovecalculate.di.Hero
 import com.example.my.lovecalculate.model.LoveModel
 import com.example.my.lovecalculate.presenter.MainPresenter
 import com.example.my.lovecalculate.view.MainView

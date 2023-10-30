@@ -6,7 +6,6 @@ import com.example.my.lovecalculate.model.LoveModel
 import com.example.my.lovecalculate.model.room.LoveDao
 import com.example.my.lovecalculate.pref.Pref
 import com.example.my.lovecalculate.view.MainView
-import dagger.hilt.android.AndroidEntryPoint
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
